@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kontaktieren Sie CleanMunich für ein individuelles Reinigungsangebot in München." />
+  <title>Kontakt | CleanMunich</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pQjnU6U+fI0B8U6Y4ZCkxzgv2Fne5+5ZTCDxbFzVz+nwK6JqqPiR+jYwIV/pY5Pja/qvpDMAYA9Yg3gFyvV3hg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>body{font-family:'Inter',sans-serif}</style>
+</head>
+<body class="antialiased text-gray-700">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">CleanMunich</a>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:text-blue-600">Start</a>
+        <a href="about.html" class="hover:text-blue-600">Über uns</a>
+        <a href="services.html" class="hover:text-blue-600">Leistungen</a>
+        <a href="contact.html" class="hover:text-blue-600">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-16">
+    <h1 class="text-3xl font-semibold mb-8 reveal">Kontakt</h1>
+    <div class="grid md:grid-cols-2 gap-12">
+      <div>
+        <form id="contact-form" action="#" method="POST" class="space-y-4 reveal">
+          <div>
+            <label for="name" class="block mb-1">Name</label>
+            <input type="text" id="name" name="name" required class="w-full border border-gray-300 p-2 rounded" />
+          </div>
+          <div>
+            <label for="email" class="block mb-1">E-Mail</label>
+            <input type="email" id="email" name="email" required class="w-full border border-gray-300 p-2 rounded" />
+          </div>
+          <div>
+            <label for="message" class="block mb-1">Nachricht</label>
+            <textarea id="message" name="message" rows="4" required class="w-full border border-gray-300 p-2 rounded"></textarea>
+          </div>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded shadow hover:bg-blue-700">Absenden</button>
+        </form>
+        <div class="mt-6 reveal">
+          <p class="mb-2"><i class="fas fa-phone mr-2"></i><a href="tel:+498912345678" class="hover:text-blue-600">+49 89 12345678</a></p>
+          <p class="mb-2"><i class="fab fa-whatsapp mr-2"></i><a href="https://wa.me/498912345678" class="hover:text-blue-600">WhatsApp</a></p>
+          <p><i class="fas fa-envelope mr-2"></i><a href="mailto:info@cleanmunich.de" class="hover:text-blue-600">info@cleanmunich.de</a></p>
+        </div>
+        <!-- Placeholder for CRM or Bewerbungsbutton integration -->
+        <div id="crm-widget" class="mt-8"></div>
+      </div>
+      <div class="reveal">
+        <iframe title="CleanMunich Standort" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.4678365819!2d11.576124315648698!3d48.13710707922381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e769fcae30079%3A0x3e73c74d4c8b9f34!2sMarienplatz%2C%2080331%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1697040000000!5m2!1sde!2sde" width="100%" height="350" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-100 py-6 mt-12">
+    <div class="container mx-auto px-4 text-center text-gray-600">
+      <p>&copy; 2024 CleanMunich. Alle Rechte vorbehalten.</p>
+      <div class="mt-2">
+        <a href="impressum.html" class="text-blue-600 hover:underline">Impressum & Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
